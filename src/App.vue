@@ -81,7 +81,7 @@
       ajaxSearchAxoios() {
         return axios({
           method: "GET",
-          url: "http://192.168.0.47:3000/",
+          url: "http://localhost:3000/",
           responseType: "json",
         }).then((response) => {
           return response.data;
@@ -92,7 +92,7 @@
 
       createOrder() {
         axios.post(
-          "http://192.168.0.47:3000/create/?newOrder"
+          "http://localhost:3000/create/?newOrder"
         )
       }
 
