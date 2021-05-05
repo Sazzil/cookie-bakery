@@ -34,7 +34,7 @@
     <div class="row mt-5">
       <div class="col-12 text-center">
         <ul class="list-group">
-          <li class="list-group-item" v-for="item in orderTime" :key="item.order_time">
+          <li class="list-group-item" v-for="item in orderTime" :key="item">
             Ordered at {{ item.order_time }}
           </li>
         </ul>
