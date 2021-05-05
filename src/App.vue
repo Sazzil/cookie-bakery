@@ -57,21 +57,21 @@
 
     methods: {
       night() {
-        document.querySelector('#app').classList.add('nightMode');
+        document.querySelector('body').classList.add('nightMode');
         document.querySelector('#windowLeft').classList.remove('windows');
         document.querySelector('#windowRight').classList.remove('windows');
         this.isDark = true;
         this.$emit('night');
       },
       day() {
-        document.querySelector('#app').classList.remove('nightMode');
+        document.querySelector('body').classList.remove('nightMode');
         document.querySelector('#windowLeft').classList.add('windows');
         document.querySelector('#windowRight').classList.add('windows');
         this.isDark = false;
         this.$emit('day');
       },
       activateDark() {
-        if (this.isDark || document.querySelector('#app').classList.contains('nightMode')) {
+        if (this.isDark || document.querySelector('body').classList.contains('nightMode')) {
           this.day();
         } else {
           this.night();
